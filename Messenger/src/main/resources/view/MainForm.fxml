@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="674.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MaiFormController">
+   <children>
+      <ImageView fitHeight="674.0" fitWidth="575.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/oops.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="15.0" layoutY="138.0" opacity="0.39" prefHeight="440.0" prefWidth="545.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="446.0" prefWidth="545.0" />
+         </content>
+      </ScrollPane>
+      <JFXTextField fx:id="txtMessage" layoutX="36.0" layoutY="594.0" onAction="#sendMessageKeyAction" opacity="0.61" prefHeight="45.0" prefWidth="365.0" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnSentMessage" layoutX="486.0" layoutY="594.0" onAction="#sendMessageOnAction" opacity="0.24" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: white;" text=" ">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sent.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtName" layoutX="238.0" layoutY="67.0" onAction="#txtNameOnAction" opacity="0.62" prefHeight="45.0" prefWidth="302.0" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <Label layoutX="169.0" layoutY="67.0" prefHeight="45.0" prefWidth="57.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <JFXButton fx:id="btnChooseImg" layoutX="420.0" layoutY="594.0" onAction="#btnChooseImgOnAction" opacity="0.24" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: white;" text="  ">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/camera.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
